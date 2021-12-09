@@ -1,18 +1,26 @@
-# Salesforce DX Project: Next Steps
+# Apex Challenges
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## SETUP:
+1) Authenticate VS Code to SF Playground
+2) RUN: sfdx force:source:deploy -x .\manifest\package.xml
+3) Enter playground developer console
+4) Ctrl+e
+5) Run one of the following:
 
-## How Do You Plan to Deploy Your Changes?
+MyFirstClass c = new MyFirstClass();
+c.Add151Accounts();
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+OR 
 
-## Configure Your Salesforce DX Project
+MyFirstClass c = new MyFirstClass();
+c.DeleteAccounts1to151();
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+OR 
 
-## Read All About It
+MyFirstClass c = new MyFirstClass();
+c.ProvideContactDetails();
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+OR 
+
+MyFirstClass c = new MyFirstClass();
+c.public void Create200GenericContacts();
